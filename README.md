@@ -18,24 +18,6 @@ composer require elrayes/laravel-csv-export
 
 The service provider and facade will be automatically registered via Laravel's package discovery.
 
-## Running Tests
-
-### Via Laravel Sail
-
-```bash
-./vendor/bin/sail test packages/LaravelCsvExport
-```
-
-### Standalone (local)
-
-If you have dependencies installed within the package directory:
-
-```bash
-cd packages/LaravelCsvExport
-composer install
-./vendor/bin/phpunit
-```
-
 ## Concepts
 
 - Elrayes\LaravelCsvExport\Contracts\DataExporterInterface
