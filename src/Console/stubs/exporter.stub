@@ -12,7 +12,7 @@ class {{ class }} extends BaseExporter
     /**
      * @return Builder|Collection|BuilderContract
      */
-    public function query(): Builder|Collection|BuilderContract
+    public function query()
     {
         // return User::query();
     }
