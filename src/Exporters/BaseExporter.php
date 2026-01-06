@@ -69,7 +69,7 @@ abstract class BaseExporter implements DataExporterInterface
      *
      * @return Builder|Collection<int, TModel>|BuilderContract
      */
-    public function query()
+    public function query(): Builder|Collection|BuilderContract
     {
         return Builder::clone();
     }
