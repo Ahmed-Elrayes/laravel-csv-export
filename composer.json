@@ -1,0 +1,41 @@
+{
+  "name": "elrayes/laravel-csv-export",
+  "description": "Lightweight CSV export package for Laravel with exporters, service, writer, and facade.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/Ahmed-Elrayes/laravel-csv-export",
+  "support": {
+    "issues": "https://github.com/Ahmed-Elrayes/laravel-csv-export/issues",
+    "source": "https://github.com/Ahmed-Elrayes/laravel-csv-export"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elrayes\\LaravelCsvExport\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Elrayes\\LaravelCsvExport\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "illuminate/support": "^12.0",
+    "illuminate/database": "^12.0",
+    "illuminate/contracts": "^12.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "orchestra/testbench": "^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Elrayes\\LaravelCsvExport\\Providers\\CSVExportServiceProvider"
+      ],
+      "aliases": {
+        "CSVExport": "Elrayes\\LaravelCsvExport\\Facades\\CSVExport"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<?php
+
+namespace {{ namespace }};
+
+use Elrayes\LaravelCsvExport\Exporters\BaseExporter;
+use Illuminate\Contracts\Database\Eloquent\Builder as BuilderContract;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Collection;
+
+class {{ class }} extends BaseExporter
+{
+    /**
+     * @return Builder|Collection|BuilderContract
+     */
+    public function query(): Builder|Collection|BuilderContract
+    {
+        // return User::query();
+    }
+
+    public function headings(): array
+    {
+        return [
+            // 'ID',
+            // 'Name',
+        ];
+    }
+
+    public function map(mixed $row): array
+    {
+        return [
+            // $row->id,
+            // $row->name,
+        ];
+    }
+}
