@@ -19,7 +19,7 @@ interface DataExporterInterface
      *
      * @return Builder|Collection<int, TModel>|BuilderContract
      */
-    public function query(): Builder|Collection|BuilderContract;
+    public function query()
 
     /**
      * Provide the CSV headings.
